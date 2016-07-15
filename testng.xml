@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="All tests">
+   <listeners>
+    <listener class-name="com.epam.tat.module4.TAF_Calc.reporting.CustomReporter" />
+    <listener class-name="com.epam.tat.module4.TAF_Calc.listener.TimerExecutionListener" />
+  </listeners>
+  <test name="Arithmetic operations testing"> 
+       <!-- <groups>
+      	<run>
+      		<include name="sum tests"/>
+      	</run>
+   	  </groups>-->
+   	  <parameter name="a" value="0"/> 
+   	  <parameter name="a" value="-0"/> 
+      <classes>
+         <class name="com.epam.tat.module4.TAF_Calc.test.ArithmeticTest" />
+      </classes>
+      
+   </test>
+   <test name="Testing Trigonometric operations">
+      <classes>
+         <class name="com.epam.tat.module4.TAF_Calc.test.TrigonometricTest" />
+      </classes>
+   </test>
+   <test name="Testing isPositive and IsNegative methods">
+      <classes>
+         <class name="com.epam.tat.module4.TAF_Calc.test.PosAndNegNumTest" />
+      </classes>
+   </test>
+</suite>
