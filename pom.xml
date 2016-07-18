@@ -13,6 +13,16 @@
             <version>6.9.9</version>
         </dependency>
 
+
+    <dependency>
+
+       <groupId>groupId</groupId>
+       <artifactId>artifactId</artifactId>
+       <version>version</version>
+      <scope>system</scope>
+    <systemPath>${project.basedir}/calculator-1.0.jar</systemPath>
+    </dependency>
+
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
