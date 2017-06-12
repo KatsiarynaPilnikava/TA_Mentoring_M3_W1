@@ -5,11 +5,6 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>TA_Mentoring_M3_W1</name>
   <description>TA_Mentoring_M3_W1</description>
- <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <aspectj.version>1.8.7</aspectj.version>
-    <allure.results.directory>${project.basedir}/target/site</allure.results.directory>
-  </properties>
  <dependencies>
         <dependency>
             <groupId>org.testng</groupId>
@@ -55,16 +50,7 @@
          			</suiteXmlFiles>
         		</configuration>
       		</plugin>
-          <plugin>
-	    <groupId>ru.yandex.qatools.allure</groupId>
-	    <artifactId>allure-maven-plugin</artifactId>
-	    <version>1.5</version>
-	    <configuration>
-	        <resultsDirectory>allure-results</resultsDirectory>
-	         <reportDirectory>allure-report</reportDirectory>
-	    </configuration>
-	</plugin>
-      		
+
         </plugins>
 </build>
 </project>
